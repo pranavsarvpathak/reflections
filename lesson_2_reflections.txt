@@ -5,16 +5,20 @@ How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 An intermediate area to include files in our repository. So that we can include files of our choice and make sure the files are those we want by using "git status" and "git reset" option.
 
-How can you use the staging area to make sure you have one commit per logical
-change?
+How can you use the staging area to make sure you have one commit per logical change?
+by using git diff --staged to see the difference between index and the most recent commit.
 
-What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Keeping multiple versions of the same software.
+Keeping backup and extending the same branch.
 
 How do the diagrams help you visualize the branch structure?
+they are awesome signifying the commit low,(head is just a   pointer to commit that moves along with new commits).
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Combine diff modifications , diagram representation because the flow graph clarifies the flow of the commits. "git show branch_id" is very important to find git diff with parent.
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+Pros - reduces manual reviews of every piece of code
+Cons - will affect the flow of control when dependent codes will get auto merged (eg. related to the same variable).
