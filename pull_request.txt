@@ -1,0 +1,17 @@
+In a collaborative env it is required to make changes through pull request (in case of a merge conflict after generating pull request so that the desired barnch can be merged into master, 
+1. pull into local,
+2. update master into your desired branch
+3. then push it so that the updated pull request can be reviewed by other members again
+4. Only then should it be merged with master
+).
+Do the above, rather than merging in your local machine and direct pushing it.
+
+Merging pull requests always generates a new commit, even in case of fast forward merges(i.e. when one branch is ancestor of another - also recommended to delete the branch if not master or not in further use).
+
+We can merge pull request from browser
+OR
+we can fetch the branch and merge in our local
+OR
+we can pull the branch.
+
+You just saw that the workflow when making changes in a separate branch is more complicated than working directly in master, especially when you need to stay up-to-date with changes others are making. Rather than simply pulling and pushing, you need to pull changes into your local master branch, merge the local master into your branch (different-oil, in our case), then push your branch to the remote before finally merging your branch into master, either locally or on GitHub.

@@ -19,10 +19,8 @@ To see the difference of states from when we last fetched or pulled using our re
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
-
-    Fill in your answer here
+Use shared memory, the solution requires lesser memory overall but can cause more conflicts in regards to updates.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
-
-    Fill in your answer here
+when to see how the merge is going to act out without messing around with the PRODUCTION(master) branch(when working with a group). Changing into master is done to incorporate the feature in the main program or for production(also when working individually).
